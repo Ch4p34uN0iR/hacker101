@@ -27,6 +27,7 @@ Sessions
 	- [Crypto Crash Course](sessions/crypto_crash_course)
 	- [Crypto Attacks](sessions/crypto_attacks)
 	- [Crypto Wrap-Up](sessions/crypto_wrap-up)
+- [Threat Modeling](sessions/threat_modeling)
 
 Vulnerabilities
 ---------------
@@ -45,6 +46,7 @@ Vulnerabilities
 - [SQL Injection](vulnerabilities/sqli)
 - [Stored Cross-Site Scripting (XSS)](vulnerabilities/stored_xss)
 - [Stream Cipher Key Reuse](vulnerabilities/stream_reuse)
+- [Subdomain Takeover](vulnerabilities/subdomain_takeover)
 - [Unchecked Redirect](vulnerabilities/unchecked_redirect)
 
 Coursework

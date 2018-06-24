@@ -41,7 +41,6 @@ a {
 }
 abbr[title] {
     border-bottom: none;
-    text-decoration: underline;
     text-decoration: underline dotted;
 }
 b, strong {
@@ -168,17 +167,7 @@ a:hover {
     color: #33ff66;
     background: #333;
 }
-img:not(.center-img) {
-    float: right;
-    margin: 20px 10px 5px;
-    max-width: 200px;
-}
-@media (max-width: 550px) {
-    img: not(.center-img) {
-    max-width: 100%;
-    margin: 10px 0 15px;
-}
-}figure {
+figure {
     float: right;
     margin: 0 10px 5px;
 }
@@ -196,7 +185,7 @@ figure img {
     float: none;
     margin: 0!important;
 }
-.center-img {
+img {
     max-width: 100%
 }
 .container { 
@@ -215,10 +204,7 @@ figure img {
 .hero {
     height: 100%;
     width: 100%;
-    background-color: #000;
-    background: url("../images/hero-background.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
+    background: #000 url("../images/hero-background.jpg") no-repeat center;
     background-size: cover;
 }
 .hero h1,
@@ -243,7 +229,7 @@ blockquote {
     font-weight: 700;
 }
 blockquote span {
-    font-weight: regular;
+    font-weight: normal;
 }
 .references {
     border-top: 1px solid #000;

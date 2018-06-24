@@ -8,7 +8,7 @@ Related Session
 ---------------
 
 <div class="container">
-	<iframe id="ytplayer" type="text/html" width="640" height="360" src="https://www.youtube-nocookie.com/embed/AEushmkXRpE?rel=0&autoplay=0&origin=https://hacker101.com" frameborder="0"></iframe>
+	<iframe id="ytplayer" type="text/html" width="640" height="360" src="https://www.youtube-nocookie.com/embed/AEushmkXRpE?rel=0&autoplay=0&origin={{ site.url }}" frameborder="0"></iframe>
 </div>
 
 Description
@@ -25,6 +25,12 @@ An attacker can control the value of the `return_to` parameter and make it redir
 ```
 http://example.com/?return_to=http://evil.com
 ```
+
+Here is a proof of concept to demonstrate how an open redirect occurs. Please note that this particular example is not a vulnerability and just here for demonstration purposes.
+
+[https://httpbin.org/redirect-to?url=https://www.hacker101.com](https://httpbin.org/redirect-to?url=https://www.hacker101.com)
+
+The URL looks like it should go to httpbin.org, but you are redirected to www.hacker101.com.
 
 Security Impact
 ---------------
